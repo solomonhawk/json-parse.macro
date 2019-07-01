@@ -1,0 +1,1 @@
+const obj = JSON.parse("{\"string\":\"string\",\"number\":1,\"array\":[1,2,3],\"object\":{\"foo\":\"bar\"}}");

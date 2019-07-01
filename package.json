@@ -1,0 +1,53 @@
+{
+  "name": "json-parse.macro",
+  "version": "0.0.1",
+  "description": "A macro for babel-plugin-macros that performs a small optimization for static JS objects",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "> 4",
+    "npm": "> 3"
+  },
+  "scripts": {
+    "pretest": "npm run build",
+    "build": "kcd-scripts build",
+    "lint": "kcd-scripts lint",
+    "test": "kcd-scripts test",
+    "test:update": "npm test -- --updateSnapshot --coverage",
+    "validate": "kcd-scripts validate"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "babel-plugin-macros"
+  ],
+  "author": "Solomon Hawk <solomon.hawk@viget.com> (http://www.viget.com/about/team/shawk/)",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-macros": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-plugin-tester": "^5.0.0",
+    "babel-preset-env": "^1.7.0",
+    "kcd-scripts": "^1.4.0",
+    "prettier": "^1.10.2"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/kcd-scripts/eslint.js",
+    "rules": {
+      "complexity": [
+        "error",
+        12
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solomonhawk/json-parse.macro.git"
+  }
+}
